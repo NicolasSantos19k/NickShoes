@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/site-logo.png">
+    <script src="script.js"></script>
+    <title>NickShoes</title>
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">☰</button>
+            <div class="dropdown-content" id="myDropdown" >
+                <a href="#about">Sobre</a>
+                <a href="#mercadoria">Loja</a>
+                <a href="#local">Local</a>
+                <a href="#footer">Contato</a>
+            </div>
+            <a href="#home"><img src="Images/logo.png" alt="" class="logo"></a>
+            <nav class="bar">
+        </div>
+        <a href="#home"><img src="Images/logo.png" alt="" class="logo2"></a>
+        <nav class="bar">
+            <ul>
+                <a href="#about"><li class="list-item">Sobre</li></a>
+                <a href="#mercadoria"><li class="list-item">Loja</li></a>
+                <a href="#local"><li class="list-item">Local</li></a>
+                <a href="#footer"><li class="list-item">Contato</li></a>
+            </ul>
+        </nav>
+
+        <form>
+            <div class="formulario">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fas fa-search" onclick="myFunction2()"></i>
+                <input type="text" class="search" placeholder="Search..." id="search">
+            </div>
+        </form>
+
+    </header>
+    <div class="back" id="home">
+        <div class="sessao-1">
+            <h1 class="title"><span class="diferente">NickStore:</span><span class="celular"> Sempre um passo</span> À frente de você</h1>
+            <h4 class="subtitle">A loja oferece uma seleção cuidadosamente curada das melhores marcas e modelos do mercado<span class="celular">, desde os clássicos atemporais até as últimas novidades em design e tecnologia.</span></h4>
+            <div class="btn-content">
+                <button class="btn1">Compre Agora</button>
+                <button class="btn2">Saiba Mais</button>
+            </div>
+        </div>
+        <img src="Images/shoes.png" alt="" class="shoes">
+    </div>
+    <section>
+        <div class="commentario-1">
+            <img src="Images/shoes3.png" alt="" class="commentario-imagem">
+            <div class="quadrante-1">
+                <h2 class="comentario-title-1">Conforto</h2>
+                <p class="comentario-coment-1">Os tênis da NickStore são projetados para proporcionar um conforto excepcional<span class="celular">, combinando tecnologia avançada com um design ergonômico.</span></p>
+            </div>
+        </div>
+        <div class="commentario-2">
+            <div class="quadrante-2">
+                <h2 class="comentario-title-2">Estilo</h2>
+                <p class="comentario-coment-2">Os tênis Nickstore se destacam por seu estilo contemporâneo e versátil, que combina elegância e modernidade.<span class="celular">Cada modelo é desenhado para atender às últimas tendências da moda, oferecendo linhas clean e acabamentos sofisticados.</span></p>
+            </div>
+            <img src="Images/shoes2.png" alt="" class="commentario-imagem-2">
+        </div>
+        <div class="commentario-1">
+            <img src="Images/shoes.png" alt="" class="commentario-imagem">
+            <div class="quadrante-1">
+                <h2 class="comentario-title-1">Visual</h2>
+                <p class="comentario-coment-1">A ergonomia dos tênis Nickstore é pensada para proporcionar o máximo de conforto e suporte para os pés ao longo do dia.<span class="celular">Cada modelo é projetado com uma construção que se adapta ao formato natural do pé.</span></p>
+            </div>
+        </div>
+    </section>
+    <div class="back-2" id="about">
+        <div class="back-2-1">
+            <img src="Images/NETWORK.png" alt="" class="brand">
+        </div>
+        <div class="back-2-2">
+            <h1 class="conheca-marca">CONHEÇA NOSSA MARCA</h1>
+            <p class="conheca-subtitulo">Nossa missão é tornar sua experiência de compra inesquecível<span class="celular">, com um atendimento ao cliente dedicado e uma plataforma de fácil navegação. Explore nossa loja e descubra a combinação perfeita de qualidade, estilo e conforto.</span></p>
+            <button class="btn-conheca">Conheça</button>
+        </div>
+    </div>
+    <div class="cards" id="mercadoria">
+        <div class="card">
+            <div class="card-header">
+                <img src="Images/logo.png" alt="" class="card-logo">
+                <p class="card-price">R$ 689,00</p>
+            </div>
+            <div class="card-img-container">
+                <img src="Images/shoes.png" alt="" class="card-img" id="tilt">
+            </div>
+            <h4 class="shoes-name">Air Jordan 1</h4>
+            <div class="btn-container">
+                <button class="card-btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="Images/logo.png" alt="" class="card-logo">
+                <p class="card-price">R$ 899,00</p>
+            </div>
+            <div class="card-img-container">
+                <img src="Images/shoes2.png" alt="" class="card-img" id="tilt">
+            </div>
+            <h4 class="shoes-name">Nike Air</h4>
+            <div class="btn-container">
+                <button class="card-btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="Images/logo.png" alt="" class="card-logo">
+                <p class="card-price">R$ 929,00</p>
+            </div>
+            <div class="card-img-container">
+                <img src="Images/shoes3.png"" class="card-img" id="tilt">
+            </div>
+            <h4 class="shoes-name">Zoom Vapor</h4>
+            <div class="btn-container">
+                <button class="card-btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="Images/logo.png" alt="" class="card-logo">
+                <p class="card-price">R$ 489,00</p>
+            </div>
+            <div class="card-img-container">
+                <img src="Images/shoes4.png" alt="" class="card-img" id="tilt">
+            </div>
+            <h4 class="shoes-name">Air Jordan 2</h4>
+            <div class="btn-container">
+                <button class="card-btn">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div class="mapa-container" id="local">
+        <div class="location-container">
+            <i class="fa-solid fa-location-dot"></i>
+            <h1 class="location-text"><span class="diferente">Sempre</span> perto de você<span class="relogio">, onde quer que você esteja!</span></h1>
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.0041458376634!2d-46.27293441207291!3d-23.4337418048543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ff744c41075%3A0xea49cbeeb6ed306c!2sNike%20Factory%20Store%20-%20Outlet%20Premium%20Grande%20SP!5e0!3m2!1spt-BR!2sbr!4v1725318212654!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="triangle-container">
+            <div class="triangle"></div>
+        </div>
+        <div class="footer-elements-1">
+            <h1 class="follow">Siga-nos em nossas redes sociais</h1>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook-f" id="social-icons"></i>
+                    <i class="fa-brands fa-instagram" id="social-icons"></i>
+                    <i class="fa-brands fa-twitter" id="social-icons"></i>
+                    <i class="fa-brands fa-youtube" id="social-icons"></i>
+                    <i class="fa-brands fa-telegram" id="social-icons"></i>
+                </div>
+        </div>
+        <div class="footer-elements-2">
+            <div class="columns">
+                <div class="column">
+                    <h3 class="column-title">Informações</h3>
+                    <p class="column-text">Sobre nós</p>
+                    <p class="column-text">Privacidade</p>
+                    <p class="column-text">Termos de uso</p>
+                    <p class="column-text">Contato</p>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">Ajuda</h3>
+                    <p class="column-text">FAQ</p>
+                    <p class="column-text">Entregas</p>
+                    <p class="column-text">Devoluções</p>
+                    <p class="column-text">Pagamento</p>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">Afiliados</h3>
+                    <p class="column-text">Corporações</p>
+                    <p class="column-text">Colaborações</p>
+                    <p class="column-text">Patrocinadores</p>
+                    <p class="column-text">Cupons</p>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">Produtos</h3>
+                    <p class="column-text">Serviços</p>
+                    <p class="column-text">Categorias</p>
+                    <p class="column-text">Manuais</p>
+                    <p class="column-text">Tutoriais</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

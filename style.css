@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #A91D3A;
+    --secondary-color: #B43F3F;
+    --tertiary-color: #EEEEEE;
+    --quarternary-color: #151515;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #151515;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+
+}
+.back{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    color: var(--tertiary-color);
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+
+}
+.subtitle{
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.diferente{
+    background-color: var(--primary-color);
+    color: var(--quarternary-color);
+}
+.shoes{
+    object-fit: contain;
+    background-color: var(--primary-color);
+    padding: 50px 0 0 50px;
+    border-radius: 70% 30% 77% 23% / 29% 58% 42% 71% ;
+    }
+.list-item{
+    cursor: pointer;
+    color: var(--tertiary-color);
+    transition: 0.1s ease;
+}
+.list-item:hover{
+    color: var(--primary-color);
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.logo2{
+    width: 60px;
+}
+.fa-search{
+    color: var(--tertiary-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.fa-search:hover{
+    color: var(--primary-color);
+}
+.fa-cart-shopping{
+    color: var(--tertiary-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.fa-cart-shopping:hover{
+    color: var(--primary-color);
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+}
+.search{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--tertiary-color);
+    font-size: 15px;
+    border-bottom: 2px solid var(--tertiary-color);
+    display: none;
+}
+/*dropdown*/
+.dropbtn{
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    z-index: 1;
+    
+}
+.dropdown-content a:hover{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+.dropdown-content a{
+    color: var(--primary-color);
+    padding: 12px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s ease;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+.show{
+    display: block;
+}
+.item1, .item2, .item3{
+    cursor: pointer;
+}
+.item1:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+.item2:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+.item3:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+.item1:active{
+    color: rgba(255, 255, 255, 0.2);
+}
+.item2:active{
+    color: rgba(255, 255, 255, 0.2);
+}
+.item3:active{
+    color: rgba(255, 255, 255, 0.2);
+}
+.btn1{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn1:hover{
+    background-color: var(--tertiary-color);
+    color: var(--quarternary-color);
+}
+.btn2{
+    background-color: transparent;
+    color: var(--tertiary-color);
+    border: 2px solid var(--tertiary-color);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn2:hover{
+    background-color: var(--tertiary-color);
+    color: var(--quarternary-color);
+}
+.comentario-title-1{
+    color: var(--primary-color)
+}
+.comentario-title-2{
+    color: var(--primary-color);
+}
+.commentario-2{
+    margin: 50px 0 50px 0;
+    
+}
+.back-2{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: 100%;
+    margin-top: 100px;
+
+}
+.brand{
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.conheca-marca{
+    color: var(--quarternary-color);
+    font-weight: bold;
+}
+.conheca-subtitulo{
+    color: var(--quarternary-color);
+    font-weight: 100;
+}
+.btn-conheca{
+    color: var(--tertiary-color);
+    background-color: var(--quarternary-color);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.1s ease;
+}
+.btn-conheca:hover{
+    color: var(--quarternary-color);
+    background-color: var(--tertiary-color);
+}
+/*cards*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    gap: 100px;
+    overflow: hidden;
+}
+.card{
+    width: 270px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: rgb(169, 29, 58, 0.5);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.card:hover{
+    transform: scale(1.03);
+    background-color: #A91D3A;
+}
+.card-price{
+    font-weight: bold;
+    color: #151515;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-logo{
+    width: 50px;
+}
+.card-img-container{
+    margin-left: 50px;
+}
+.card-img:hover{
+    transform: scale(1.1);
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.card-btn{
+    border: none;
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+    background-color: #151515;
+    color: #EEEEEE;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.card-btn:hover{
+    background-color: #fff;
+    color: #151515;
+}
+.shoes-name{
+    text-align: center;
+    color: #151515;
+    font-weight: 400;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 950px solid transparent;
+    border-right: 950px solid transparent;
+    border-bottom: 100px solid #A91D3A;
+}
+.triangle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.footer-elements-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 100%;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.follow{
+    border: 2px solid var(--tertiary-color);
+    padding: 5px 10px;
+    font-weight: 100;
+}
+#social-icons{
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+.fa-instagram:hover{
+    color: #c32aa3;
+}
+.fa-twitter:hover{
+    color: #00acee;
+}
+.fa-youtube:hover{
+    color: #ff0000;
+}
+.fa-telegram:hover{
+    color: #0088cc;
+}
+.column-title{
+    color: #EEEEEE;
+    opacity: 0.5;
+    font-weight: 100;
+}
+.column-text{
+    color: #EEEEEE;
+    font-weight: 500;
+}
+.columns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.column{
+    flex-wrap: wrap;
+}
+.footer-elements-2{
+    background-color: var(--primary-color);
+}
+/*Media*/
+/*desktop*/
+@media (min-width: 1024px){
+    .back{
+        height: 100vh;
+    }
+    .shoes{
+        width: 40vw;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .back{
+        padding: 0 120px 0 120px;
+    }
+    .btn1{
+        width: 30%;
+    }
+    .btn2{
+        width: 30%;
+    }
+    .dropdown{
+        display: none;
+    }
+    header{
+        padding: 20px 120px;
+    }
+    .commentario-1{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 120px;
+        align-items: center;
+        color: var(--tertiary-color);
+    }
+    .comentario-title-1{
+        font-size: 50px;
+        text-align: right;
+        padding-bottom: 30px;
+    }
+    .comentario-coment-1{
+        text-align: right;
+        font-size: 25px;
+    }
+    .commentario-imagem{
+        width: 350px;
+    }
+    .quadrante-1{
+        width: 40vw;
+    }
+    .commentario-2{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 120px;
+        align-items: center;
+        color: var(--tertiary-color);
+    }
+    .comentario-title-2{
+        font-size: 50px;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    .comentario-coment-2{
+        text-align: left;
+        font-size: 25px;
+    }
+    .commentario-imagem-2{
+        width: 350px;
+    }
+    .quadrante-2{
+        width: 40vw;
+    }
+    .back-2{
+        padding: 0 120px 0 120px;
+        height: 100vh;
+    }
+    .brand{
+        margin: 0 200px 0 0;
+        width: 25vw;
+    }
+    .conheca-marca{
+        padding-bottom: 20px;
+    }
+    .btn-conheca{
+        width: 25%;
+        margin-top: 50px;
+    }
+    .mapa-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 200px 100px;
+    }
+    .fa-location-dot{
+        font-size: 10vw;
+        color: var(--primary-color);
+    }
+    .location-container{
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+        width: 50%;
+    }
+    .location-text{
+        font-size: 2vw;
+        color: var(--tertiary-color);
+    }
+    .mapa{
+        border-radius: 15px;
+        width: 30vw;
+        height: 20vw;
+        opacity: 0.5;
+        transition: 0.1s ease;
+    }
+    .mapa:hover{
+        opacity: 1;
+    }
+    .card-img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        transition: 0.1s ease;
+    }
+    /*footer*/
+    .footer-elements-1{
+        height: 30vh;
+        gap: 20px;
+    }
+    .follow{
+        font-size: 20px;
+    }
+    .social-media{
+        font-size: 30px;
+        gap: 50px;
+    }
+    .columns{
+        padding: 20px 200px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 200px;
+    }
+
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .back{
+        height: 100vh;
+    }
+    .shoes{
+        width: 400px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        font-size: 18px;
+        display: none;
+    }
+    .back{
+        padding: 0 20px 0 20px;
+    }
+    .btn1{
+        width: 50%;
+    }
+    .btn2{
+        width: 40%;
+    }
+    .tablet{
+        display: none;
+    }
+    .search{
+        width: 100px;
+    }
+    header{
+        padding: 20px 20px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .commentario-1{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        align-items: center;
+        color: var(--tertiary-color);
+    }
+    .comentario-title-1{
+        font-size: 30px;
+        text-align: right;
+    }
+    .comentario-coment-1{
+        text-align: right;
+    }
+    .commentario-imagem{
+        width: 300px;
+    }
+    .quadrante-1{
+        width: 40vw;
+    }
+    .commentario-2{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        align-items: center;
+        color: var(--tertiary-color);
+    }
+    .comentario-title-2{
+        font-size: 30px;
+        text-align: left;
+    }
+    .comentario-coment-2{
+        text-align: left;
+    }
+    .commentario-imagem-2{
+        width: 300px;
+    }
+    .quadrante-2{
+        width: 40vw;
+    }
+    .back-2{
+        padding: 0 20px 0 20px;
+        height: 100vh;
+    }
+    .brand{
+        margin: 0 100px 0 0;
+        width: 250px;
+    }
+    .conheca-marca{
+        padding-bottom: 20px;
+    }
+    .btn-conheca{
+        width: 50%;
+        margin-top: 40px;
+    }
+    .mapa-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 200px 20px;
+    }
+    .fa-location-dot{
+        font-size: 100px;
+        color: var(--primary-color);
+    }
+    .location-container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .mapa{
+        border-radius: 15px;
+        width: 400px;
+        height: 300px;
+        opacity: 0.5;
+        transition: 0.1s ease;
+    }
+    .mapa:hover{
+        opacity: 1;
+    }
+    .card-img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        transition: 0.1s ease;
+    }
+    .footer-elements-1{
+        height: 30vh;
+        gap: 20px;
+    }
+    .follow{
+        font-size: 18px;
+    }
+    .social-media{
+        font-size: 30px;
+        gap: 40px;
+    }
+    .columns{
+        padding: 20px 120px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 150px;
+    }
+
+}
+/*mobile*/
+@media (max-width: 767px){
+    ul{
+        display: none;
+    }
+    header{
+        padding: 20px 20px;
+    }
+    .logo{
+        width: 50px;
+        margin: 0 15px;
+    }
+    .shoes{
+        width: 180px;
+        margin-bottom: 50px;
+        padding: 20px 0 0 10px;
+    }
+    .celular{
+        display: none;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        display: none;
+    }
+    .back{
+        padding: 0 20px 0 20px;
+        height: 100vh;
+    }
+    .btn1{
+        width: 100%;
+    }
+    .btn2{
+        width: 100%;
+    }
+    .btn-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .celular{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .search{
+        width: 100%;
+    }
+    .commentario-1{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        align-items: center;
+        color: var(--tertiary-color);
+    }
+    .comentario-title-1{
+        font-size: 30px;
+        text-align: right;
+    }
+    .commentario-imagem{
+        width: 150px;
+    }
+    .comentario-coment-1{
+        text-align: right;
+        display: none;
+    }
+    .quadrante-1{
+        width: 40vw;
+    }
+    .commentario-2{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        align-items: center;
+        color: var(--tertiary-color);
+    }
+    .comentario-title-2{
+        font-size: 30px;
+        text-align: left;
+    }
+    .comentario-coment-2{
+        text-align: left;
+        display: none;
+    }
+    .commentario-imagem-2{
+        width: 150px;
+    }
+    .quadrante-2{
+        width: 40vw;
+    }
+    .back-2{
+        padding: 0 20px 0 20px;
+        height: 100vh;
+    }
+    .brand{
+        margin: 0 20px 0 0;
+        width: 150px;
+    }
+    .conheca-marca{
+        font-size: 18px;
+    }
+    .conheca-subtitulo{
+        font-size: 15px;
+    }
+    .conheca-marca{
+        padding-bottom: 5px;
+    }
+    .btn-conheca{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .logo2{
+        display: none;
+    }
+    .mapa-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        margin: 200px 20px;
+        color: var(--tertiary-color);
+    }
+    .fa-location-dot{
+        font-size: 100px;
+        color: var(--primary-color);
+    }
+    .location-container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .mapa{
+        border-radius: 15px;
+        width: 350px;
+        height: 200px;
+        opacity: 0.5;
+        transition: 0.1s ease;
+    }
+    .mapa:hover{
+        opacity: 1;
+    }
+    .card-img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        transition: 0.1s ease;
+    }
+    .footer-elements-1{
+        height: 30vh;
+        gap: 20px;
+    }
+    .follow{
+        font-size: 18px;
+    }
+    .social-media{
+        font-size: 30px;
+        gap: 40px;
+    }
+    .columns{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+}
+@media (max-width: 320px){
+    ul{
+        display: none;
+    }
+    header{
+        padding: 10px 20px;
+    }   
+    .logo{
+        display: none;
+    }
+    .shoes{
+        width: 150px;
+        margin-bottom: 50px;
+        padding: 20px 0 0 10px;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 40px;
+        width: 150px;
+    }
+    .subtitle{
+        display: none;
+    }
+    .back{
+        padding: 0px 0px;
+        height: 120vh;
+        gap: 20px;
+    }
+    .btn1{
+        display: none;
+    }
+    .btn2{
+        display: none;
+    }
+    .btn-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .celular{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .search{
+        width: 100%;
+    }
+    .commentario-1{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px;
+        align-items: center;
+    }
+    .comentario-title-1{
+        font-size: 30px;
+        text-align: right;
+    }
+    .commentario-imagem{
+        width: 100px;
+    }
+    .comentario-coment-1{
+        display: none;
+    }
+    .commentario-2{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        align-items: center;
+    }
+    .comentario-title-2{
+        font-size: 30px;
+        text-align: left;
+    }
+    .comentario-coment-2{
+        display: none;
+    }
+    .commentario-imagem-2{
+        width: 100px;
+    }
+    .quadrante-2{
+        width: 40vw;
+    }
+    .back-2{
+        padding: 0;
+        height: 100vh;
+    }
+    .brand{
+        margin: 0 20px 0 0;
+        width: 150px;
+    }
+    .conheca-marca{
+        font-size: 18px;
+    }
+    .conheca-subtitulo{
+        display: none;
+    }
+    .conheca-marca{
+        padding-bottom: 5px;
+    }
+    .btn-conheca{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .logo2{
+        display: none;
+    }
+    .mapa-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        margin: 200px 20px;
+    }
+    .fa-location-dot{
+        font-size: 100px;
+        color: var(--primary-color);
+    }
+    .location-container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .mapa{
+        border-radius: 15px;
+        width: 300px;
+        height: 200px;
+        opacity: 0.5;
+        transition: 0.1s ease;
+    }
+    .mapa:hover{
+        opacity: 1;
+    }
+    .relogio{
+        display: none;
+    }
+    .card-img{
+        width: 250px;
+        height: 300px;
+        object-fit: contain;
+        transition: 0.1s ease;
+    }
+    .follow{
+        font-size: 15px;
+    }
+    .social-media{
+        font-size: 25px;
+        gap: 35px;
+    }
+    .columns{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
