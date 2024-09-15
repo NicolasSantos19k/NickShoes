@@ -623,6 +623,9 @@ ul{
         width: 50%;
         margin-top: 40px;
     }
+    .location-text{
+        color: var(--tertiary-color);
+    }
     .mapa-container{
         display: flex;
         justify-content: space-between;
