@@ -384,6 +384,7 @@ ul{
 }
 .footer-elements-2{
     background-color: var(--primary-color);
+    padding-bottom: 100px;
 }
 /*Media*/
 /*desktop*/
