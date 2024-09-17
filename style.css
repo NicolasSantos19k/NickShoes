@@ -623,9 +623,6 @@ ul{
         width: 50%;
         margin-top: 40px;
     }
-    .location-text{
-        color: var(--tertiary-color);
-    }
     .mapa-container{
         display: flex;
         justify-content: space-between;
@@ -635,6 +632,9 @@ ul{
     .fa-location-dot{
         font-size: 100px;
         color: var(--primary-color);
+    }
+    .location-text{
+        color: var(--tertiary-color);
     }
     .location-container{
         display: flex;
@@ -725,7 +725,7 @@ ul{
         display: block;
     }
     .search{
-        width: 100px;
+        width: 100%;
     }
     .commentario-1{
         display: flex;
