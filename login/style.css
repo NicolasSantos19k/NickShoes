@@ -193,7 +193,7 @@ ul{
     border: 2px solid #fff;
     padding: 60px 40px 60px 40px;
     backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    --webkit-backdrop-filter: blur(40px);
     border-radius: 20px;
     animation: animation 2s ease-out;
 }
