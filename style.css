@@ -725,7 +725,7 @@ ul{
         display: block;
     }
     .search{
-        width: 100%;
+        width: 100px;
     }
     .commentario-1{
         display: flex;
