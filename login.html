@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/site-logo.webp">
+    <script src="script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Images/logo.webp" alt="" class="logo2"></a>
+        <form>
+            <div class="formulario">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fas fa-search" onclick="myFunction2()"></i>
+                <input type="text" class="search" placeholder="Search..." id="search">
+            </div>
+        </form>
+
+    </header>
+<section class="back">
+    <form class="login-form">
+        <h1 class="login-title">Login</h1>
+        <div class="form-element0">
+            <i class="fa-solid fa-user" id="icons2"></i>
+            <input type="email" name="email" id="email" placeholder="E-mail" class="forms">
+        </div>
+        <div class="form-element">
+            <i class="fa-solid fa-lock" id="icons2"></i>
+            <input type="password" id="passwd" name="passwd" placeholder="Senha" class="forms">
+            <i class="fa fa-eye showpwd" id="icons2" style="cursor: pointer;" onClick="showPwd('passwd', this)"></i>
+        </div>
+        <div class="form-element-2">
+            <input type="checkbox" name="Remeber-me" id="checkbox">
+            <label for="checkbox" class="remember-me">Lembre-me</label>
+            <a href="" class="forgot">Esqueci minha senha</a>
+        </div>
+        <div class="form-element-3">
+            <button class="btn-login">Entrar</button>
+            <p class="dont-have">Não tem uma conta? <a href="" class="sign">Registre-se</a></p>
+        </div>
+            
+        </div>
+        </div>
+
+    </form>
+</section>
+    
+</body>
+</html>
